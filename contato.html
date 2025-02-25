@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>EngComp UEMA - Contato</title>
+  
+  <!-- Bootstrap 5 CSS via CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar d-flex justify-content-between align-items-center">
+    <div class="ms-2"><strong>Universidade Estadual do Maranhão (UEMA)</strong></div>
+    <div class="me-2">
+      <a href="#">Acesso</a>
+      <a href="#">Contato</a>
+      <a href="#">Outros Links</a>
+    </div>
+  </div>
+
+  <!-- Navbar principal -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="assets/Uema.jpg" alt="Logo UEMA" style="max-height: 40px;" class="me-2">
+        <span class="text-white fw-bold d-none d-md-inline">Portal UEMA</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" 
+              aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="filter: invert(1) brightness(2);"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <!-- Outros itens do menu -->
+          <li class="nav-item"><a class="nav-link" href="curso.html">Curso</a></li>
+          <li class="nav-item"><a class="nav-link" href="gestao.html">Gestão</a></li>
+          <li class="nav-item"><a class="nav-link" href="pesquisa.html">Pesquisa</a></li>
+          <li class="nav-item"><a class="nav-link" href="departamentos.html">Departamentos</a></li>
+          <li class="nav-item"><a class="nav-link" href="indicadores.html">Indicadores</a></li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contato.html">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Conteúdo principal -->
+  <main class="container my-5">
+    <h1 class="mb-4">Contato</h1>
+    <p>Em caso de dúvidas, sugestões ou para obter mais informações, entre em contato conosco:</p>
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Informações de Contato</h5>
+        <p><strong>Endereço:</strong> Rua Exemplo, 123 - São Luís, MA</p>
+        <p><strong>Telefone:</strong> (98) 99999-9999</p>
+        <p><strong>Email:</strong> <a href="mailto:contato@uema.br">contato@uema.br</a></p>
+      </div>
+      <div class="col-md-6">
+        <h5>Formulário de Contato</h5>
+        <form>
+          <div class="mb-3">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="seuemail@exemplo.com">
+          </div>
+          <div class="mb-3">
+            <label for="mensagem" class="form-label">Mensagem</label>
+            <textarea class="form-control" id="mensagem" rows="4" placeholder="Digite sua mensagem"></textarea>
+          </div>
+          <button type="submit" class="btn btn-leia-mais">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 mb-3">
+          <img src="assets/uema-rodape.png" alt="Logo UEMA">
+        </div>
+        <div class="col-md-3 mb-3 rodape-links">
+          <h5>Acesso Rápido</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Portal do Aluno</a></li>
+            <li><a href="#">Biblioteca</a></li>
+            <li><a href="#">Calendário Acadêmico</a></li>
+            <li><a href="#">Sistema Interno</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h5>Contato</h5>
+          <p>Rua Exemplo, 123 - São Luís, MA</p>
+          <p>Telefone: (98) 99999-9999</p>
+          <p>Email: <a href="mailto:contato@uema.br">contato@uema.br</a></p>
+        </div>
+      </div>
+      <div class="rodape-copy text-center">
+        <p>© 2025 UEMA - Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- jQuery e Bootstrap JS via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

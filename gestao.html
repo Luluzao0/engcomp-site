@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Portal UEMA - Gestão</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho (top-bar e navbar idênticos) -->
+  <div class="top-bar d-flex justify-content-between align-items-center">
+    <div class="ms-2">
+      <strong>Universidade Estadual do Maranhão (UEMA)</strong>
+    </div>
+    <div class="me-2">
+      <a href="#">Acesso</a>
+      <a href="#">Contato</a>
+      <a href="#">Outros Links</a>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="https://via.placeholder.com/120x50?text=UEMA" alt="Logo UEMA" style="max-height: 40px;" class="me-2">
+        <span class="text-white fw-bold d-none d-md-inline">Portal UEMA</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+              aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="filter: invert(1) brightness(2);"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="gestao.html" id="gestaoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Gestão
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="gestaoDropdown">
+              <li><a class="dropdown-item" href="#empresa-junior">Empresa Júnior</a></li>
+              <li><a class="dropdown-item" href="#diretoria">Diretoria Acadêmica</a></li>
+              <li><a class="dropdown-item" href="#projetos-especiais">Projetos Especiais</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="curso.html">Curso</a></li>
+          <li class="nav-item"><a class="nav-link" href="pesquisa.html">Pesquisa</a></li>
+          <li class="nav-item"><a class="nav-link" href="departamentos.html">Departamentos</a></li>
+          <li class="nav-item"><a class="nav-link" href="indicadores.html">Indicadores</a></li>
+          <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Conteúdo Principal da Aba Gestão -->
+  <main class="container my-5">
+    <section id="empresa-junior">
+      <h1 class="mb-3">Empresa Júnior</h1>
+      <p>A Empresa Júnior reúne estudantes engajados em projetos de consultoria, desenvolvendo soluções inovadoras para empresas locais e contribuindo para o aprendizado prático dos alunos.</p>
+    </section>
+    <hr>
+    <section id="diretoria">
+      <h1 class="mb-3">Diretoria Acadêmica</h1>
+      <p>A Diretoria Acadêmica organiza e supervisiona as atividades pedagógicas, garantindo a qualidade do ensino e a integração entre teoria e prática.</p>
+    </section>
+    <hr>
+    <section id="projetos-especiais">
+      <h1 class="mb-3">Projetos Especiais</h1>
+      <p>Os Projetos Especiais incentivam a inovação, promovendo iniciativas que visam o desenvolvimento tecnológico e social, com parcerias entre a universidade e a comunidade.</p>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 mb-3">
+          <img src="https://via.placeholder.com/120x50?text=Logo+UEMA" alt="Logo UEMA">
+        </div>
+        <div class="col-md-3 mb-3">
+          <h5>Acesso Rápido</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Portal do Aluno</a></li>
+            <li><a href="#" class="text-white">Biblioteca</a></li>
+            <li><a href="#" class="text-white">Calendário Acadêmico</a></li>
+            <li><a href="#" class="text-white">Sistema Interno</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h5>Contato</h5>
+          <p>Rua Exemplo, 123 - São Luís, MA</p>
+          <p>Telefone: (98) 99999-9999</p>
+          <p>Email: <a href="mailto:contato@uema.br" class="text-white">contato@uema.br</a></p>
+        </div>
+      </div>
+      <div class="text-center">
+        <p>© 2025 UEMA - Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- jQuery e Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

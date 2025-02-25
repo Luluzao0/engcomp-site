@@ -1,0 +1,162 @@
+/* ===============================
+   RESET & CONFIGURAÇÕES GLOBAIS
+   =============================== */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+    line-height: 1.6;
+  }
+  
+  /* ===============================
+     TOPO: TOP-BAR
+     =============================== */
+  .top-bar {
+    background-color: #003366; /* Cor principal */
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .top-bar a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1rem;
+  }
+  
+  .top-bar a:hover {
+    text-decoration: underline;
+  }
+  
+  /* ===============================
+     NAVBAR
+     =============================== */
+  .navbar {
+    background-color: #003366;
+  }
+  
+  .navbar .navbar-brand,
+  .navbar .nav-link {
+    color: #fff !important;
+  }
+  
+  .navbar .nav-link:hover {
+    background-color: #002244;
+  }
+  
+  /* Dropdown Menu */
+  .dropdown-menu {
+    background-color: #003366;
+  }
+  
+  .dropdown-menu .dropdown-item {
+    color: #fff;
+  }
+  
+  .dropdown-menu .dropdown-item:hover,
+  .dropdown-menu .dropdown-item.active {
+    background-color: #002244;
+  }
+  
+  /* ===============================
+     SEÇÃO HERO (Cabeçalho Grande)
+     =============================== */
+  .hero {
+    background-color: #f9f9f9;
+    border-bottom: 2px solid #ccc;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  .hero img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* ===============================
+     CONTEÚDO PRINCIPAL
+     =============================== */
+  main {
+    padding: 2rem 0;
+  }
+  
+  /* ===============================
+     COMPONENTES: CARDS (Notícias)
+     =============================== */
+  .card-noticia {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .card-noticia:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  }
+  
+  /* ===============================
+     BLOCOS ESCUROS (Menus Adicionais)
+     =============================== */
+  .blocos-menus {
+    background-color: #003366;
+    padding: 2rem 1rem;
+  }
+  
+  .bloco-escuro {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  .bloco-escuro h5 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .bloco-escuro a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .bloco-escuro a:hover {
+    text-decoration: underline;
+  }
+  
+  /* ===============================
+     RODAPÉ
+     =============================== */
+  footer {
+    background-color: #003366;
+    color: #fff;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .rodape-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .rodape-copy {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+  

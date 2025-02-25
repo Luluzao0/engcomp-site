@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Portal UEMA - Curso</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Bar e Navbar (mesmo cabeçalho de index.html) -->
+  <div class="top-bar d-flex justify-content-between align-items-center">
+    <div class="ms-2">
+      <strong>Universidade Estadual do Maranhão (UEMA)</strong>
+    </div>
+    <div class="me-2">
+      <a href="#">Acesso</a>
+      <a href="#">Contato</a>
+      <a href="#">Outros Links</a>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="https://via.placeholder.com/120x50?text=UEMA" alt="Logo UEMA" style="max-height: 40px;" class="me-2">
+        <span class="text-white fw-bold d-none d-md-inline">Portal UEMA</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+              aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="filter: invert(1) brightness(2);"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="curso.html" id="cursoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Curso
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="cursoDropdown">
+              <li><a class="dropdown-item" href="#visao-missao">Visão - Missão</a></li>
+              <li><a class="dropdown-item" href="#historico">Histórico do Curso</a></li>
+              <li><a class="dropdown-item" href="#docentes">Docentes</a></li>
+              <li><a class="dropdown-item" href="#coordenacao">Coordenação</a></li>
+            </ul>
+          </li>
+          <!-- Outras abas mantidas com links para suas respectivas páginas -->
+          <li class="nav-item"><a class="nav-link" href="gestao.html">Gestão</a></li>
+          <li class="nav-item"><a class="nav-link" href="pesquisa.html">Pesquisa</a></li>
+          <li class="nav-item"><a class="nav-link" href="departamentos.html">Departamentos</a></li>
+          <li class="nav-item"><a class="nav-link" href="indicadores.html">Indicadores</a></li>
+          <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Conteúdo Principal da Aba Curso -->
+  <main class="container my-5">
+    <section id="visao-missao">
+      <h1 class="mb-3">Visão - Missão</h1>
+      <p>A UEMA busca formar profissionais competentes e comprometidos com o desenvolvimento regional, unindo ensino, pesquisa e extensão. Nossa missão é oferecer um ensino de qualidade e transformar a realidade da sociedade.</p>
+    </section>
+    <hr>
+    <section id="historico">
+      <h1 class="mb-3">Histórico do Curso</h1>
+      <p>O curso possui uma rica trajetória com marcos importantes desde sua fundação. Ao longo dos anos, evoluímos em infraestrutura, corpo docente e metodologias de ensino para acompanhar as demandas do mercado.</p>
+    </section>
+    <hr>
+    <section id="docentes">
+      <h1 class="mb-3">Docentes</h1>
+      <p>Nossos professores são especialistas em suas áreas, com ampla experiência acadêmica e prática. Eles atuam na formação de alunos críticos e inovadores.</p>
+    </section>
+    <hr>
+    <section id="coordenacao">
+      <h1 class="mb-3">Coordenação</h1>
+      <p>A coordenação do curso trabalha para integrar todas as áreas do conhecimento, promovendo a melhoria contínua do ensino e garantindo a excelência acadêmica.</p>
+    </section>
+  </main>
+
+  <!-- Rodapé (mesmo do index.html) -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 mb-3">
+          <img src="https://via.placeholder.com/120x50?text=Logo+UEMA" alt="Logo UEMA">
+        </div>
+        <div class="col-md-3 mb-3">
+          <h5>Acesso Rápido</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Portal do Aluno</a></li>
+            <li><a href="#" class="text-white">Biblioteca</a></li>
+            <li><a href="#" class="text-white">Calendário Acadêmico</a></li>
+            <li><a href="#" class="text-white">Sistema Interno</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h5>Contato</h5>
+          <p>Rua Exemplo, 123 - São Luís, MA</p>
+          <p>Telefone: (98) 99999-9999</p>
+          <p>Email: <a href="mailto:contato@uema.br" class="text-white">contato@uema.br</a></p>
+        </div>
+      </div>
+      <div class="text-center">
+        <p>© 2025 UEMA - Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- jQuery e Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
