@@ -1,385 +1,443 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <title>EngComp UEMA</title>
-  
-  <!-- Bootstrap 5 CSS via CDN -->
-  <link 
-    rel="stylesheet" 
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-  >
+  <head>
+    <meta charset="UTF-8" />
+    <title>EngComp UEMA</title>
 
-  <!-- Link para CSS personalizado -->
-  <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap 5 CSS via CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
 
-  <!-- Favicon (opcional) -->
-  <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
-</head>
-<body>
+    <!-- Link para CSS personalizado -->
+    <link rel="stylesheet" href="css/style.css" />
 
-  <!-- Barra superior com links rápidos / contatos -->
-  <div class="top-bar d-flex justify-content-between align-items-center">
-    <div class="ms-2">
-      <strong>Universidade Estadual do Maranhão (UEMA)</strong>
-    </div>
-    <div class="me-2">
-      <a href="#">Acesso</a>
-      <a href="#">Contato</a>
-      <a href="#">Outros Links</a>
-    </div>
-  </div>
-
-  <!-- Navbar principal -->
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="#">
-        <!-- Logo UEMA (placeholder) -->
-        <img 
-          src="assets/Uema.jpg" 
-          alt="Logo UEMA" 
-          style="max-height: 40px;"
-          class="me-2"
-        >
-        <span class="text-white fw-bold d-none d-md-inline">Portal UEMA</span>
-      </a>
-      <button 
-        class="navbar-toggler" 
-        type="button" 
-        data-bs-toggle="collapse" 
-        data-bs-target="#navbarMenu"
-        aria-controls="navbarMenu" 
-        aria-expanded="false" 
-        aria-label="Toggle navigation"
-      >
-        <!-- Ícone hamburguer branco -->
-        <span class="navbar-toggler-icon" style="filter: invert(1) brightness(2);"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarMenu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="home.html">Home</a>
-          </li>
-          <!-- Exemplo de dropdown -->
-          <li class="nav-item dropdown">
-            <a 
-              class="nav-link dropdown-toggle" 
-              href="#" 
-              id="cursoDropdown" 
-              role="button" 
-              data-bs-toggle="dropdown" 
-              aria-expanded="false"
-            >
-              Curso
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="cursoDropdown">
-              <li><a class="dropdown-item" href="direcao-secretaria.html">Direção e Secretaria</a></li>
-              <li><a class="dropdown-item" href="docentes.html">Docentes</a></li>
-              <li><a class="dropdown-item" href="colegiado.html">Colegiado</a></li>
-              <li><a class="dropdown-item" href="nucleo-docente-estruturante.html">Núcleo Docente Estruturante</a></li>
-              <li><a class="dropdown-item" href="infraestrutura.html">Infraestrutura</a></li>
-              <li><a class="dropdown-item" href="projeto-pedagogico1.html">Projeto Pedagógico</a></li>
-              <li><a class="dropdown-item" href="grade-curricular.html">Grade Curricular</a></li>
-              <li><a class="dropdown-item" href="estagio-supervisionado.html">Estágio Supervisionado</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a 
-              class="nav-link dropdown-toggle" 
-              href="#" 
-              id="gestaoDropdown" 
-              role="button" 
-              data-bs-toggle="dropdown" 
-              aria-expanded="false"
-            >
-              Gestão
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="gestaoDropdown">
-              <li><a class="dropdown-item" href="empresa-junior.html">Empresa Júnior</a></li>
-              <li><a class="dropdown-item" href="diretoria-academica.html">Diretoria Acadêmica</a></li>
-              <li><a class="dropdown-item" href="projetos-especiais.html">Projetos Especiais</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a 
-              class="nav-link dropdown-toggle" 
-              href="#" 
-              id="pesquisaDropdown" 
-              role="button" 
-              data-bs-toggle="dropdown" 
-              aria-expanded="false"
-            >
-              Pesquisa
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="pesquisaDropdown">
-              <li><a class="dropdown-item" href="iniciacao-cientifica.html">Iniciação Científica</a></li>
-              <li><a class="dropdown-item" href="pibic.html">PIBIC</a></li>
-              <li><a class="dropdown-item" href="pibiti.html">PIBITI</a></li>
-              <li><a class="dropdown-item" href="laboratorios.html">Laboratórios</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a 
-              class="nav-link dropdown-toggle" 
-              href="#" 
-              id="departamentosDropdown" 
-              role="button" 
-              data-bs-toggle="dropdown" 
-              aria-expanded="false"
-            >
-              Departamentos
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="departamentosDropdown">
-              <li><a class="dropdown-item" href="noticias.html">Notícias</a></li>
-              <li><a class="dropdown-item" href="projetos.html">Projetos</a></li>
-              <li><a class="dropdown-item" href="publicacoes.html">Publicações</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a 
-              class="nav-link dropdown-toggle" 
-              href="#" 
-              id="indicadoresDropdown" 
-              role="button" 
-              data-bs-toggle="dropdown" 
-              aria-expanded="false"
-            >
-              Indicadores
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="indicadoresDropdown">
-              <li><a class="dropdown-item" href="localizacao.html">Localização</a></li>
-              <li><a class="dropdown-item" href="estatisticas.html">Estatísticas</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contato.html">Contato</a>
-          </li>
-        </ul>
+    <!-- Favicon (opcional) -->
+    <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
+  </head>
+  <body>
+    <!-- Barra superior com links rápidos / contatos -->
+    <div class="top-bar d-flex justify-content-between align-items-center">
+      <div class="ms-2">
+        <strong>Universidade Estadual do Maranhão (UEMA)</strong>
+      </div>
+      <div class="me-2">
+        <a href="#">Acesso</a>
+        <a href="#">Contato</a>
+        <a href="#">Outros Links</a>
       </div>
     </div>
-  </nav>
 
-  <!-- Seção hero/cabeçalho grande -->
-  <section class="hero">
-    <div class="container text-center">
-      <img 
-        src="assets/Uema.jpg" 
-        alt="Logo UEMA"
-        class="img-fluid mb-3"
-      >
-      <h1>Engenharia de Computação</h1>
-      <p>Bem-vindo ao Portal Acadêmico e Institucional</p>
-    </div>
-  </section>
-
-  <!-- Seção de notícias em cards -->
-  <section class="noticias container my-5">
-    <h2 class="text-center mb-4">Notícias</h2>
-    <div class="row g-4">
-      <!-- Card 1 -->
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <div class="card card-noticia h-100">
-          <img 
-            src="assets/teste.jpg" 
-            class="card-img-top" 
-            alt="Notícia 1"
-          >
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Concurso Vestibular</h5>
-            <p class="card-text flex-grow-1">
-              Confira as últimas atualizações sobre o Vestibular da UEMA...
-            </p>
-            <a href="#" class="btn btn-leia-mais mt-2">Leia Mais</a>
-          </div>
-        </div>
-      </div>
-      <!-- Card 2 -->
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <div class="card card-noticia h-100">
-          <img 
-            src="assets/teste.jpg" 
-            class="card-img-top" 
-            alt="Notícia 2"
-          >
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Semana de Pesquisa</h5>
-            <p class="card-text flex-grow-1">
-              Participe da Semana de Pesquisa com palestras e workshops...
-            </p>
-            <a href="#" class="btn btn-leia-mais mt-2">Leia Mais</a>
-          </div>
-        </div>
-      </div>
-      <!-- Card 3 -->
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <div class="card card-noticia h-100">
-          <img 
-            src="assets/teste.jpg" 
-            class="card-img-top" 
-            alt="Notícia 3"
-          >
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Projetos de Extensão</h5>
-            <p class="card-text flex-grow-1">
-              Conheça os projetos que aproximam a universidade da comunidade...
-            </p>
-            <a href="#" class="btn btn-leia-mais mt-2">Leia Mais</a>
-          </div>
-        </div>
-      </div>
-      <!-- Card 4 -->
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <div class="card card-noticia h-100">
-          <img 
-            src="assets/teste.jpg" 
-            class="card-img-top" 
-            alt="Notícia 4"
-          >
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Exposição de Arte</h5>
-            <p class="card-text flex-grow-1">
-              Mostra cultural em parceria com artistas locais...
-            </p>
-            <a href="#" class="btn btn-leia-mais mt-2">Leia Mais</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Blocos escuros (menus adicionais ou informações) -->
-  <section class="blocos-menus">
-    <div class="container">
-      <div class="row gy-4">
-        <!-- Bloco 1 -->
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="bloco-escuro">
-            <h5>Home</h5>
-            <ul class="list-unstyled">
-              <li><a href="#">Visão - Missão</a></li>
-              <li><a href="#">Histórico</a></li>
-              <li><a href="#">Infraestrutura</a></li>
-              <li><a href="#">Equipe</a></li>
-            </ul>
-          </div>
-        </div>
-        <!-- Bloco 2 -->
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="bloco-escuro">
-            <h5>Curso</h5>
-            <ul class="list-unstyled">
-              <li><a href="#">Docentes</a></li>
-              <li><a href="#">Grade Curricular</a></li>
-              <li><a href="#">Estágio Supervisionado</a></li>
-            </ul>
-          </div>
-        </div>
-        <!-- Bloco 3 -->
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="bloco-escuro">
-            <h5>Gestão</h5>
-            <ul class="list-unstyled">
-              <li><a href="#">Empresa Júnior</a></li>
-              <li><a href="#">Diretoria Acadêmica</a></li>
-              <li><a href="#">Projeto Especial</a></li>
-            </ul>
-          </div>
-        </div>
-        <!-- Bloco 4 -->
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="bloco-escuro">
-            <h5>Pesquisa</h5>
-            <ul class="list-unstyled">
-              <li><a href="#">Iniciação Científica</a></li>
-              <li><a href="#">PIBIC</a></li>
-              <li><a href="#">PIBITI</a></li>
-              <li><a href="#">Laboratórios</a></li>
-              <li><a href="#">TCC</a></li>
-            </ul>
-          </div>
-        </div>
-        <!-- Bloco 5 -->
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="bloco-escuro">
-            <h5>Departamentos</h5>
-            <ul class="list-unstyled">
-              <li><a href="#">Notícias</a></li>
-              <li><a href="#">Projetos</a></li>
-              <li><a href="#">Publicações</a></li>
-            </ul>
-          </div>
-        </div>
-        <!-- Bloco 6 -->
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="bloco-escuro">
-            <h5>Indicadores</h5>
-            <ul class="list-unstyled">
-              <li><a href="#">Localização</a></li>
-              <li><a href="#">Estatísticas</a></li>
-            </ul>
-          </div>
-        </div>
-        <!-- Bloco 7 -->
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="bloco-escuro">
-            <h5>Contato</h5>
-            <ul class="list-unstyled">
-              <li><a href="#">Endereço</a></li>
-              <li><a href="#">Telefone</a></li>
-              <li><a href="#">E-mail</a></li>
-            </ul>
-          </div>
-        </div>
-        <!-- Adicione mais blocos se necessário -->
-      </div>
-    </div>
-  </section>
-
-  <!-- Rodapé -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <!-- Logo UEMA no rodapé -->
-        <div class="col-md-3 mb-3">
-          <img 
-            src="assets/uema-rodape.png" 
+    <!-- Navbar principal -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <!-- Logo UEMA (placeholder) -->
+          <img
+            src="assets/engecomp.png"
             alt="Logo UEMA"
+            style="max-height: 40px"
+            class="me-2"
+          />
+          <span class="text-white fw-bold d-none d-md-inline">Portal UEMA</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMenu"
+          aria-controls="navbarMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <!-- Ícone hamburguer branco -->
+          <span
+            class="navbar-toggler-icon"
+            style="filter: invert(1) brightness(2)"
+          ></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <!-- Exemplo de dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="cursoDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Curso
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="cursoDropdown">
+                <li>
+                  <a class="dropdown-item" href="direcao-secretaria.html"
+                    >Direção e Secretaria</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="docentes.html">Docentes</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="colegiado.html">Colegiado</a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="nucleo-docente-estruturante.html"
+                    >Núcleo Docente Estruturante</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="infraestrutura.html"
+                    >Infraestrutura</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="projeto-pedagogico1.html"
+                    >Projeto Pedagógico</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="grade-curricular.html"
+                    >Grade Curricular</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="estagio-supervisionado.html"
+                    >Estágio Supervisionado</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="gestaoDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Gestão
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="gestaoDropdown">
+                <li>
+                  <a class="dropdown-item" href="empresa-junior.html"
+                    >Empresa Júnior</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="diretoria-academica.html"
+                    >Diretoria Acadêmica</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="projetos-especiais.html"
+                    >Projetos Especiais</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="pesquisaDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Pesquisa
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="pesquisaDropdown">
+                <li>
+                  <a class="dropdown-item" href="iniciacao-cientifica.html"
+                    >Iniciação Científica</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="pibic.html">PIBIC</a></li>
+                <li><a class="dropdown-item" href="pibiti.html">PIBITI</a></li>
+                <li>
+                  <a class="dropdown-item" href="laboratorios.html"
+                    >Laboratórios</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="departamentosDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Departamentos
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="departamentosDropdown">
+                <li>
+                  <a class="dropdown-item" href="noticias.html">Notícias</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="projetos.html">Projetos</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="publicacoes.html"
+                    >Publicações</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="indicadoresDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Indicadores
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="indicadoresDropdown">
+
+                <li>
+                  <a class="dropdown-item" href="estatisticas.html"
+                    >Estatísticas</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <!-- Contato (agora dropdown) -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="contatoDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
           >
-        </div>
-        <!-- Links rápidos -->
-        <div class="col-md-3 mb-3 rodape-links">
-          <h5>Acesso Rápido</h5>
-          <ul class="list-unstyled">
-            <li><a href="#">Portal do Aluno</a></li>
-            <li><a href="#">Biblioteca</a></li>
-            <li><a href="#">Calendário Acadêmico</a></li>
-            <li><a href="#">Sistema Interno</a></li>
+            Contato
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="contatoDropdown">
+            <li><a class="dropdown-item" href="contato.html">Informações de Contato</a></li>
+            <li><a class="dropdown-item" href="localizacao.html">Localização</a></li>
+          </ul>
+        </li>
           </ul>
         </div>
-        <!-- Informações de contato -->
-        <div class="col-md-3 mb-3">
-          <h5>Contato</h5>
-          <p>Rua Exemplo, 123 - São Luís, MA</p>
-          <p>Telefone: (98) 99999-9999</p>
-          <p>E-mail: <a href="mailto:contato@uema.br">contato@uema.br</a></p>
+      </div>
+    </nav>
+
+    <!-- Seção hero/cabeçalho grande -->
+    <section class="hero">
+      <div class="container text-center">
+        <img src="assets/engcomp.png" alt="Logo UEMA" class="logo-hero mb-3" />
+
+        <h1>Engenharia de Computação</h1>
+        <p>Bem-vindo ao Portal Acadêmico e Institucional</p>
+      </div>
+    </section>
+
+    <!-- Seção de notícias em cards -->
+    <section class="noticias container my-5">
+      <h2 class="text-center mb-4">Notícias</h2>
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card card-noticia h-100">
+            <img src="assets/teste.jpg" class="card-img-top" alt="Notícia 1" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Concurso Vestibular</h5>
+              <p class="card-text flex-grow-1">
+                Confira as últimas atualizações sobre o Vestibular da UEMA...
+              </p>
+              <a href="#" class="btn btn-leia-mais mt-2">Leia Mais</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card card-noticia h-100">
+            <img src="assets/teste.jpg" class="card-img-top" alt="Notícia 2" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Semana de Pesquisa</h5>
+              <p class="card-text flex-grow-1">
+                Participe da Semana de Pesquisa com palestras e workshops...
+              </p>
+              <a href="#" class="btn btn-leia-mais mt-2">Leia Mais</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card card-noticia h-100">
+            <img src="assets/teste.jpg" class="card-img-top" alt="Notícia 3" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Projetos de Extensão</h5>
+              <p class="card-text flex-grow-1">
+                Conheça os projetos que aproximam a universidade da
+                comunidade...
+              </p>
+              <a href="#" class="btn btn-leia-mais mt-2">Leia Mais</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card card-noticia h-100">
+            <img src="assets/teste.jpg" class="card-img-top" alt="Notícia 4" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Exposição de Arte</h5>
+              <p class="card-text flex-grow-1">
+                Mostra cultural em parceria com artistas locais...
+              </p>
+              <a href="#" class="btn btn-leia-mais mt-2">Leia Mais</a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="rodape-copy">
-        <p>© 2025 UEMA - Todos os direitos reservados.</p>
+    </section>
+
+    <!-- Blocos escuros (menus adicionais ou informações) -->
+    <section class="blocos-menus">
+      <div class="container">
+        <div class="row gy-4">
+          <!-- Bloco 1 -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="bloco-escuro">
+              <h5>Home</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">Visão - Missão</a></li>
+                <li><a href="#">Histórico</a></li>
+                <li><a href="#">Infraestrutura</a></li>
+                <li><a href="#">Equipe</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Bloco 2 -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="bloco-escuro">
+              <h5>Curso</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">Docentes</a></li>
+                <li><a href="#">Grade Curricular</a></li>
+                <li><a href="#">Estágio Supervisionado</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Bloco 3 -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="bloco-escuro">
+              <h5>Gestão</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">Empresa Júnior</a></li>
+                <li><a href="#">Diretoria Acadêmica</a></li>
+                <li><a href="#">Projeto Especial</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Bloco 4 -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="bloco-escuro">
+              <h5>Pesquisa</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">Iniciação Científica</a></li>
+                <li><a href="#">PIBIC</a></li>
+                <li><a href="#">PIBITI</a></li>
+                <li><a href="#">Laboratórios</a></li>
+                <li><a href="#">TCC</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Bloco 5 -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="bloco-escuro">
+              <h5>Departamentos</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Projetos</a></li>
+                <li><a href="#">Publicações</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Bloco 6 -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="bloco-escuro">
+              <h5>Indicadores</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">Localização</a></li>
+                <li><a href="#">Estatísticas</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Bloco 7 -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="bloco-escuro">
+              <h5>Contato</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">Endereço</a></li>
+                <li><a href="#">Telefone</a></li>
+                <li><a href="#">E-mail</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Adicione mais blocos se necessário -->
+        </div>
       </div>
-    </div>
-  </footer>
+    </section>
 
-  <!-- jQuery e Bootstrap JS via CDN -->
-  <script 
-    src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js">
-  </script>
-  <script 
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
-  </script>
+    <!-- Rodapé -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <!-- Logo UEMA no rodapé -->
+          <div class="col-md-3 mb-3">
+            <img
+              src="assets/engcomp1.png"
+              alt="Logo UEMA"
+              class="logo-rodape"
+            />
+          </div>
+          <!-- Links rápidos -->
+          <div class="col-md-3 mb-3 rodape-links">
+            <h5>Acesso Rápido</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Portal do Aluno</a></li>
+              <li><a href="#">Biblioteca</a></li>
+              <li><a href="#">Calendário Acadêmico</a></li>
+              <li><a href="#">Sistema Interno</a></li>
+            </ul>
+          </div>
+          <!-- Informações de contato -->
+          <div class="col-md-3 mb-3">
+            <h5>Contato</h5>
+            <p>Rua Exemplo, 123 - São Luís, MA</p>
+            <p>Telefone: (98) 99999-9999</p>
+            <p>E-mail: <a href="mailto:contato@uema.br">contato@uema.br</a></p>
+          </div>
+        </div>
+        <div class="rodape-copy">
+          <p>© 2025 UEMA - Todos os direitos reservados.</p>
+          <p>Desenvolvido por <a href="https://www.linkedin.com/in/1lgl/">Luis Guilherme</a></p>
+        </div>
+      </div>
+    </footer>
 
-  <!-- Script customizado -->
-  <script src="js/script.js"></script>
-</body>
+    <!-- jQuery e Bootstrap JS via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script customizado -->
+    <script src="js/script.js"></script>
+  </body>
 </html>
