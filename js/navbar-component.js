@@ -14,7 +14,7 @@ class NavbarComponent extends HTMLElement {
           <div class="collapse navbar-collapse" id="navbarMenu">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" href="home.html">Home</a>
+                <a class="nav-link" href="index.html">Home</a>
               </li>
               <!-- Dropdown Curso -->
               <li class="nav-item dropdown">
