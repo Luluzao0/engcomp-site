@@ -1,5 +1,5 @@
 /* ===============================
-   RESET & CONFIGURAÇÕES GLOBAIS
+   1. RESET & CONFIGURAÇÕES GLOBAIS
    =============================== */
    * {
     margin: 0;
@@ -15,7 +15,7 @@
   }
   
   /* ===============================
-     TOPO: TOP-BAR
+     2. TOPO: TOP-BAR
      =============================== */
   .top-bar {
     background-color: #003366;
@@ -36,11 +36,11 @@
   }
   
   /* ===============================
-     NAVBAR
+     3. NAVBAR
      =============================== */
   .navbar {
     background-color: #003366;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
   .navbar .navbar-brand,
@@ -79,7 +79,7 @@
   }
   
   /* ===============================
-     LOGOS
+     4. LOGOS
      =============================== */
   .logo-navbar {
     max-height: 40px;
@@ -100,7 +100,7 @@
   }
   
   /* ===============================
-     SEÇÃO HERO
+     5. SEÇÃO HERO
      =============================== */
   .hero {
     background-color: #f9f9f9;
@@ -120,8 +120,23 @@
     color: #555;
   }
   
+  /* Estilo para a imagem adicionada na seção hero */
+  .hero-banner-container {
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .banner-hero {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
   /* ===============================
-     CONTEÚDO PRINCIPAL
+     6. CONTEÚDO PRINCIPAL
      =============================== */
   main {
     padding: 2rem 0;
@@ -140,18 +155,110 @@
   }
   
   /* ===============================
-     COMPONENTES: CARDS (Notícias)
+     7. SEÇÃO DE INFORMAÇÕES DETALHADAS
+     =============================== */
+  /* Seção de Informações Detalhadas */
+  .info-detalhada {
+    padding: 20px;
+  }
+  
+  /* ===============================
+   ESTILO PARA OS CARDS MODERNOS
+   =============================== */
+  .info-card-detalhado {
+    background-color: #003366;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+  }
+  
+  .info-card-detalhado:hover {
+    transform: translateY(-5px);
+  }
+  
+  .info-card-detalhado h5 {
+    color: #ccc;
+    border-bottom: 1px solid #444;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .info-card-detalhado p {
+    color: #bbb;
+    line-height: 1.6;
+  }
+
+.elegante-card {
+  background: linear-gradient(145deg, #004080, #00224d);
+  color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3), 
+              -8px -8px 15px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.elegante-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4), 
+              -10px -10px 20px rgba(255, 255, 255, 0.2);
+}
+
+.elegante-card h5 {
+  font-size: 1.5rem;
+  color: #cce6ff;
+  border-bottom: 2px solid #66a3ff;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.elegante-card p {
+  color: #d1e0ff;
+  line-height: 1.6;
+}
+
+/* Estilo Decorativo com Linhas */
+.elegante-card::before,
+.elegante-card::after {
+  content: '';
+  position: absolute;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+.elegante-card::before {
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.elegante-card::after {
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+  /* ===============================
+     8. COMPONENTES: CARDS (Notícias)
      =============================== */
   .card-noticia {
     border: none;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
   
   .card-noticia:hover {
     transform: translateY(-4px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   }
   
   .btn-leia-mais {
@@ -166,7 +273,7 @@
   }
   
   /* ===============================
-     BLOCOS ESCUROS (Menus Adicionais)
+     9. BLOCOS ESCUROS (Menus Adicionais)
      =============================== */
   .blocos-menus {
     background-color: #003366;
@@ -196,7 +303,7 @@
   }
   
   /* ===============================
-     RODAPÉ
+     10. RODAPÉ
      =============================== */
   footer {
     background-color: #003366;
@@ -227,12 +334,13 @@
   }
   
   /* ===============================
-     RESPONSIVIDADE
+     11. RESPONSIVIDADE
      =============================== */
   @media (max-width: 768px) {
     .hero h1 {
       font-size: 2rem;
     }
+  
     .hero p,
     main h1 {
       font-size: 1.2rem;
