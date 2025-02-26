@@ -4,7 +4,7 @@ class NavbarComponent extends HTMLElement {
       <!-- Navbar principal -->
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand d-flex align-items-center" href="#">
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
             <img src="assets/engecomp.png" alt="Logo UEMA" style="max-height: 40px" class="me-2" />
             <span class="text-white fw-bold d-none d-md-inline">Portal UEMA</span>
           </a>
