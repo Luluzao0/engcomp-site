@@ -21,41 +21,8 @@
     </div>
   </div>
 
-  <!-- Navbar principal -->
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <img src="assets/Uema.jpg" alt="Logo UEMA" style="max-height: 40px;" class="me-2">
-        <span class="text-white fw-bold d-none d-md-inline">Portal UEMA</span>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon" style="filter: invert(1) brightness(2);"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarMenu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
-          <!-- Dropdown Pesquisa -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="pesquisa.html" id="pesquisaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Pesquisa
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="pesquisaDropdown">
-              <li><a class="dropdown-item" href="iniciacao-cientifica.html">Iniciação Científica</a></li>
-              <li><a class="dropdown-item" href="pibic.html">PIBIC</a></li>
-              <li><a class="dropdown-item active" href="pibiti.html">PIBITI</a></li>
-              <li><a class="dropdown-item" href="laboratorios.html">Laboratórios</a></li>
-            </ul>
-          </li>
-          <!-- Outras abas -->
-          <li class="nav-item"><a class="nav-link" href="curso.html">Curso</a></li>
-          <li class="nav-item"><a class="nav-link" href="gestao.html">Gestão</a></li>
-          <li class="nav-item"><a class="nav-link" href="departamentos.html">Departamentos</a></li>
-          <li class="nav-item"><a class="nav-link" href="indicadores.html">Indicadores</a></li>
-          <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <script src="../js/navbar-component.js" defer></script>
+  <navbar-component base-url="../"></navbar-component>
 
   <!-- Conteúdo principal -->
   <main class="container my-5">
@@ -65,34 +32,8 @@
     </p>
   </main>
 
-  <!-- Rodapé -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 mb-3">
-          <img src="assets/uema-rodape.png" alt="Logo UEMA">
-        </div>
-        <div class="col-md-3 mb-3 rodape-links">
-          <h5>Acesso Rápido</h5>
-          <ul class="list-unstyled">
-            <li><a href="#">Portal do Aluno</a></li>
-            <li><a href="#">Biblioteca</a></li>
-            <li><a href="#">Calendário Acadêmico</a></li>
-            <li><a href="#">Sistema Interno</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3 mb-3">
-          <h5>Contato</h5>
-          <p>Rua Exemplo, 123 - São Luís, MA</p>
-          <p>Telefone: (98) 99999-9999</p>
-          <p>Email: <a href="mailto:contato@uema.br">contato@uema.br</a></p>
-        </div>
-      </div>
-      <div class="rodape-copy text-center">
-        <p>© 2025 UEMA - Todos os direitos reservados.</p>
-      </div>
-    </div>
-  </footer>
+  <script src="../js/footer-component.js" defer></script>
+  <footer-component base-url="../"></footer-component>
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
