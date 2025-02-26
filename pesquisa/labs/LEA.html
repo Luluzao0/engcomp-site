@@ -2,16 +2,16 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <title>EngComp UEMA - Departamentos</title>
+  <title>LEA - Laboratório de Engenharia e Automação</title>
   
   <!-- Bootstrap 5 CSS via CDN -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <!-- CSS Personalizado -->
+  <!-- CSS personalizado -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Barra superior -->
+  <!-- Top Bar -->
   <div class="top-bar d-flex justify-content-between align-items-center">
     <div class="ms-2"><strong>Universidade Estadual do Maranhão (UEMA)</strong></div>
     <div class="me-2">
@@ -28,62 +28,52 @@
         <img src="assets/Uema.jpg" alt="Logo UEMA" style="max-height: 40px;" class="me-2">
         <span class="text-white fw-bold d-none d-md-inline">Portal UEMA</span>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" 
-              aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon" style="filter: invert(1) brightness(2);"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarMenu">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <!-- Outros itens do menu (Curso, Gestão, Pesquisa, etc.) -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="departamentos.html" id="departamentosDropdown" 
-               role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Departamentos
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="departamentosDropdown">
-              <li><a class="dropdown-item active" href="#noticias">Notícias</a></li>
-              <li><a class="dropdown-item" href="#projetos">Projetos</a></li>
-              <li><a class="dropdown-item" href="#publicacoes">Publicações</a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="indicadores.html">Indicadores</a></li>
+          <li class="nav-item"><a class="nav-link" href="laboratorios.html">Laboratórios</a></li>
+          <li class="nav-item"><a class="nav-link" href="curso.html">Curso</a></li>
+          <li class="nav-item"><a class="nav-link" href="gestao.html">Gestão</a></li>
+          <li class="nav-item"><a class="nav-link" href="departamentos.html">Departamentos</a></li>
           <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Conteúdo principal -->
+  <!-- Conteúdo principal do LEA -->
   <main class="container my-5">
-    <h1 class="mb-4">Departamentos</h1>
-    
-    <section id="noticias" class="mb-5">
-      <h2>Notícias</h2>
-      <p>Esta seção apresenta as últimas atualizações, eventos e reportagens sobre as atividades acadêmicas e institucionais da UEMA.</p>
-      <!-- Adicione mais conteúdo ou links para artigos, se necessário -->
-    </section>
-
-    <section id="projetos" class="mb-5">
-      <h2>Projetos</h2>
-      <p>Aqui são destacados os principais projetos desenvolvidos pelos departamentos, englobando iniciativas interdisciplinares e de extensão universitária.</p>
-    </section>
-
-    <section id="publicacoes" class="mb-5">
-      <h2>Publicações</h2>
-      <p>Reúna nesta área os artigos, pesquisas, e publicações científicas produzidas por docentes e alunos, demonstrando a produção acadêmica da UEMA.</p>
-    </section>
+    <h1 class="mb-4">Laboratório de Engenharia e Automação (LEA)</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="assets/lea.jpg" alt="LEA - Laboratório de Engenharia e Automação" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6">
+        <p>
+          O Laboratório de Engenharia e Automação (LEA) é um espaço dedicado ao desenvolvimento de pesquisas, projetos e inovação na área de automação e controle.
+          Equipado com modernas tecnologias, o LEA possibilita que os alunos desenvolvam habilidades práticas aplicadas ao mundo real.
+        </p>
+        <ul>
+          <li>Automação Industrial</li>
+          <li>Robótica e Controle</li>
+          <li>Desenvolvimento de Sistemas Embarcados</li>
+          <li>Simulação e Modelagem</li>
+        </ul>
+        <a href="#" class="btn btn-primary mt-3">Entre em Contato</a>
+      </div>
+    </div>
   </main>
 
   <!-- Rodapé -->
   <footer>
     <div class="container">
       <div class="row">
-        <!-- Logo -->
         <div class="col-md-3 mb-3">
           <img src="assets/uema-rodape.png" alt="Logo UEMA">
         </div>
-        <!-- Links Rápidos -->
         <div class="col-md-3 mb-3 rodape-links">
           <h5>Acesso Rápido</h5>
           <ul class="list-unstyled">
@@ -93,12 +83,11 @@
             <li><a href="#">Sistema Interno</a></li>
           </ul>
         </div>
-        <!-- Contato -->
         <div class="col-md-3 mb-3">
           <h5>Contato</h5>
           <p>Rua Exemplo, 123 - São Luís, MA</p>
           <p>Telefone: (98) 99999-9999</p>
-          <p>Email: <a href="mailto:contato@uema.br">contato@uema.br</a></p>
+          <p>Email: <a href="mailto:lea@uema.br">lea@uema.br</a></p>
         </div>
       </div>
       <div class="rodape-copy text-center">
@@ -107,9 +96,8 @@
     </div>
   </footer>
 
-  <!-- jQuery e Bootstrap JS via CDN -->
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/script.js"></script>
 </body>
 </html>
