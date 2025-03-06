@@ -79,27 +79,6 @@
   }
   
   /* ===============================
-     4. LOGOS
-     =============================== */
-  .logo-navbar {
-    max-height: 40px;
-    height: auto;
-  }
-  
-  .logo-hero {
-    max-width: 250px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
-  
-  .logo-rodape {
-    max-width: 180px;
-    height: auto;
-    display: block;
-  }
-  
-  /* ===============================
      5. SEÇÃO HERO
      =============================== */
   .hero {

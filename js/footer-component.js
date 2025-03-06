@@ -10,7 +10,7 @@ class FooterComponent extends HTMLElement {
           <div class="row">
             <!-- Logo UEMA no rodapé -->
             <div class="col-md-3 mb-3">
-              <img src="${base}assets/engcomp1.png" alt="Logo UEMA" class="logo-rodape" />
+              <img src="${base}assets/engcomp.png" alt="Logo UEMA" style="max-height: 120px" class="logo-rodape" />
             </div>
             <!-- Links rápidos -->
             <div class="col-md-3 mb-3 rodape-links">
@@ -19,7 +19,7 @@ class FooterComponent extends HTMLElement {
                 <li><a href="${base}portal-do-aluno.html">Portal do Aluno</a></li>
                 <li><a href="${base}biblioteca.html">Biblioteca</a></li>
                 <li><a href="${base}calendario-academico.html">Calendário Acadêmico</a></li>
-                <li><a href="${base}sistema-interno.html">Sistema Interno</a></li>
+                <li><a href="https://sis.sig.uema.br/sigaa/verTelaLogin.do">Sistema Interno</a></li>
               </ul>
             </div>
             <!-- Informações de contato -->
@@ -32,7 +32,7 @@ class FooterComponent extends HTMLElement {
           </div>
           <div class="rodape-copy">
             <p>© 2025 UEMA - Todos os direitos reservados.</p>
-            <p>Desenvolvido por <a href="https://www.linkedin.com/in/1lgl/">Luis Guilherme</a> e <a href="https://www.linkedin.com/in/pmelo22/">Patrick Melo</a></p>
+            <p>Desenvolvido por <a href="https://www.linkedin.com/in/1lgl/">Luis Guilherme</a> e <a href="https://www.linkedin.com/in/pmelo22/">Patrick Albuquerque</a></p>
           </div>
         </div>
       </footer>

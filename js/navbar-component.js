@@ -8,8 +8,7 @@ class NavbarComponent extends HTMLElement {
       <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand d-flex align-items-center" href="${base}index.html">
-            <img src="${base}assets/engecomp.png" alt="Logo UEMA" style="max-height: 40px" class="me-2" />
-            <span class="text-white fw-bold d-none d-md-inline">Portal UEMA</span>
+            <img src="${base}assets/engcomp.png" alt="Logo UEMA" style="max-height: 100px" class="me-2" />
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon" style="filter: invert(1) brightness(2)"></span>
