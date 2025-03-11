@@ -326,3 +326,41 @@
     }
   }
   
+ /* Aumenta a largura dos parágrafos da seção de contato */
+.contato-container {
+  max-width: 550px; /* Aumentado para 550px */
+  font-size: 1.3rem; /* Aumenta um pouco o tamanho da fonte */
+}
+
+/* Aumenta o tamanho da caixa do formulário */
+.form-container {
+  max-width: 600px; /* Aumentado para 600px */
+  padding: 25px; /* Maior espaçamento interno */
+  background: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  margin-left: auto;
+}
+
+/* Aumenta a altura dos inputs e do botão */
+.form-control {
+  height: 45px; /* Campos de entrada maiores */
+  font-size: 1.1rem; /* Texto maior */
+}
+
+textarea.form-control {
+  height: 92px; /* Aumenta a altura da caixa de mensagem */
+}
+
+/* Ajuste no botão */
+.btn-enviar {
+  height: 50px;
+  font-size: 1.2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.btn-enviar:hover {
+  background-color: #0056b3;
+}

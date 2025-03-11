@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <title>EngComp UEMA - Contato</title>
-  
+
   <!-- Bootstrap 5 CSS via CDN -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <!-- CSS Personalizado -->
   <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
 
   <!-- Top Bar -->
@@ -27,42 +29,49 @@
   <!-- Conteúdo principal -->
   <main class="container my-5">
     <h1 class="mb-4">Contato</h1>
-    <p>Em caso de dúvidas, sugestões ou para obter mais informações, entre em contato conosco:</p>
     <div class="row">
-      <div class="col-md-6">
-        <h5>Informações de Contato</h5>
-        <p><strong>Endereço:</strong> Rua Exemplo, 123 - São Luís, MA</p>
-        <p><strong>Telefone:</strong> (98) 99999-9999</p>
-        <p><strong>Email:</strong> <a href="mailto:contato@uema.br">contato@uema.br</a></p>
+      <div class="col-md-5 contato-container">
+        <p><strong>Endereço:</strong> Centro de Ciências Tecnológicas - UEMA - Cidade Universitária - R. Paulo VI - São
+          Cristovao, São Luís - MA, 65055-970</p>
+        <p><strong>Telefone:</strong> +55 98 8108-7544</p>
+        <p><strong>Email:</strong> <br>
+          <a href="mailto:secretaria@engcomp.uema.br">secretaria@engcomp.uema.br</a> <br>
+          <a href="mailto:decomp@cct.uema.br">decomp@cct.uema.br</a>
+        </p>
         <p><strong>Instagram:</strong> <a href="https://www.instagram.com/engcomp.uema">engcomp.uema</a></p>
         <p><strong>X(antigo Twitter):</strong> <a href="https://x.com/engcompuema">engcompuema</a></p>
       </div>
-      <div class="col-md-6">
-        <h5>Formulário de Contato</h5>
-        <form>
+
+      <div class="col-md-7 form-container">
+        <h5 class="text-center">Formulário de Contato</h5>
+        <form id="contactForm">
           <div class="mb-3">
             <label for="nome" class="form-label">Nome</label>
-            <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+            <input type="text" class="form-control" id="nome" placeholder="Seu nome" required>
           </div>
           <div class="mb-3">
             <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="seuemail@exemplo.com">
+            <input type="email" class="form-control" id="email" placeholder="seuemail@exemplo.com" required>
           </div>
           <div class="mb-3">
             <label for="mensagem" class="form-label">Mensagem</label>
-            <textarea class="form-control" id="mensagem" rows="4" placeholder="Digite sua mensagem"></textarea>
+            <textarea class="form-control" id="mensagem" rows="4" placeholder="Digite sua mensagem" required></textarea>
           </div>
-          <button type="submit" class="btn btn-leia-mais">Enviar</button>
+          <button type="submit" class="btn btn-enviar w-100">Enviar</button>
         </form>
+        <div id="msgRetorno" class="mt-3 text-center"></div>
       </div>
     </div>
   </main>
 
-  <script src="../js/navbar-component.js" defer></script>
-  <navbar-component base-url="../"></navbar-component>
+
+  <script src="../js/footer-component.js" defer></script>
+  <footer-component base-url="../"></footer-component>
+
   <!-- jQuery e Bootstrap JS via CDN -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
+
 </html>
