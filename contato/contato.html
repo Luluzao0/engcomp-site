@@ -44,18 +44,23 @@
 
       <div class="col-md-7 form-container">
         <h5 class="text-center">Formulário de Contato</h5>
-        <form id="contactForm">
+        <form id="contactForm" action="https://formsubmit.co/SEU_EMAIL_AQUI" method="POST">
+          <!-- Impede SPAM -->
+          <input type="hidden" name="_captcha" value="false">
+
           <div class="mb-3">
             <label for="nome" class="form-label">Nome</label>
-            <input type="text" class="form-control" id="nome" placeholder="Seu nome" required>
+            <input type="text" class="form-control" id="nome" name="name" placeholder="Seu nome" required>
           </div>
           <div class="mb-3">
             <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="seuemail@exemplo.com" required>
+            <input type="email" class="form-control" id="email" name="email" placeholder="seuemail@exemplo.com"
+              required>
           </div>
           <div class="mb-3">
             <label for="mensagem" class="form-label">Mensagem</label>
-            <textarea class="form-control" id="mensagem" rows="4" placeholder="Digite sua mensagem" required></textarea>
+            <textarea class="form-control" id="mensagem" name="message" rows="4" placeholder="Digite sua mensagem"
+              required></textarea>
           </div>
           <button type="submit" class="btn btn-enviar w-100">Enviar</button>
         </form>
