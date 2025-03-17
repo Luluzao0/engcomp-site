@@ -1,51 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <title>EngComp UEMA - Notícias</title>
-  
+
   <!-- Bootstrap 5 CSS via CDN -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/style.css">
-  <style>
-    .news-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-      justify-content: center;
-    }
-    .news-card {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-      width: 400px;
-      transition: transform 0.3s;
-    }
-    .news-card:hover {
-      transform: translateY(-5px);
-    }
-    .news-card img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-    }
-    .news-card-body {
-      padding: 20px;
-    }
-    .news-card h5 {
-      font-size: 20px;
-      font-weight: bold;
-    }
-    .news-card p {
-      font-size: 16px;
-      color: #555;
-    }
-    h1 {
-      text-align: center;
-    }
-  </style>
 </head>
+
 <body>
   <!-- Top Bar -->
   <div class="top-bar d-flex justify-content-between align-items-center">
@@ -58,25 +22,40 @@
       <a href="#">Outros Links</a>
     </div>
   </div>
-  
+
   <script src="../js/navbar-component.js" defer></script>
   <navbar-component base-url="../"></navbar-component>
 
   <!-- Conteúdo Principal -->
   <main class="container my-5">
     <h1 class="mb-4 text-start">Notícias</h1>
-    
+
     <!-- Carrossel de Notícias -->
     <div id="newsCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="../assets//teste.jpg" class="d-block w-100" alt="Notícia 1">
+          <img src="../assets/teste.jpg" class="d-block w-100" alt="Notícia 1">
+          <div class="carousel-caption d-md-block">
+            <h5>Título da Notícia 1</h5>
+            <p>Descrição breve da notícia para chamar a atenção do leitor.</p>
+            <a href="noticia1.html" class="btn btn-primary">Leia mais</a>
+          </div>
         </div>
         <div class="carousel-item">
-          <img src="../assets//teste.jpg" class="d-block w-100" alt="Notícia 2">
+          <img src="../assets/teste.jpg" class="d-block w-100" alt="Notícia 2">
+          <div class="carousel-caption d-md-block">
+            <h5>Título da Notícia 2</h5>
+            <p>Descrição breve da notícia para chamar a atenção do leitor.</p>
+            <a href="noticia2.html" class="btn btn-primary">Leia mais</a>
+          </div>
         </div>
         <div class="carousel-item">
-          <img src="../assets//teste.jpg" class="d-block w-100" alt="Notícia 3">
+          <img src="../assets/teste.jpg" class="d-block w-100" alt="Notícia 3">
+          <div class="carousel-caption d-md-block">
+            <h5>Título da Notícia 3</h5>
+            <p>Descrição breve da notícia para chamar a atenção do leitor.</p>
+            <a href="noticia3.html" class="btn btn-primary">Leia mais</a>
+          </div>
         </div>
       </div>
       <a class="carousel-control-prev" href="#newsCarousel" role="button" data-bs-slide="prev">
@@ -86,6 +65,7 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
       </a>
     </div>
+
 
     <!-- Lista de Notícias -->
     <div class="news-container">
@@ -110,6 +90,13 @@
           <p>Descrição breve da notícia para chamar a atenção do leitor.</p>
         </div>
       </div>
+      <div class="news-card">
+        <img src="https://via.placeholder.com/400x220" alt="Notícia 3">
+        <div class="news-card-body">
+          <h5>Título da Notícia 3</h5>
+          <p>Descrição breve da notícia para chamar a atenção do leitor.</p>
+        </div>
+      </div>
     </div>
   </main>
 
@@ -121,4 +108,5 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
+
 </html>

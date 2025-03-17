@@ -1,358 +1,301 @@
 /* ===============================
    1. RESET & CONFIGURAÇÕES GLOBAIS
    =============================== */
-   * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Roboto', sans-serif;
-    color: #333;
-    background-color: #f8f9fa;
-    line-height: 1.6;
-  }
-  
-  /* ===============================
-     2. TOPO: TOP-BAR
-     =============================== */
-  .top-bar {
-    background-color: #003366;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-  }
-  
-  .top-bar a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 1rem;
-    transition: color 0.3s ease;
-  }
-  
-  .top-bar a:hover {
-    color: #cce6ff;
-  }
-  
-  /* ===============================
-     3. NAVBAR
-     =============================== */
-  .navbar {
-    background-color: #003366;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .navbar .navbar-brand,
-  .navbar .nav-link {
-    color: #fff !important;
-    transition: color 0.3s ease;
-  }
-  
-  .navbar .nav-link:hover {
-    color: #cce6ff !important;
-    background-color: transparent;
-  }
-  
-  .navbar-toggler {
-    border: none;
-  }
-  
-  .navbar-toggler-icon {
-    filter: invert(1) brightness(2);
-  }
-  
-  /* Dropdown Menu */
-  .dropdown-menu {
-    background-color: #003366;
-    border: none;
-  }
-  
-  .dropdown-menu .dropdown-item {
-    color: #fff;
-    transition: background 0.3s ease;
-  }
-  
-  .dropdown-menu .dropdown-item:hover,
-  .dropdown-menu .dropdown-item.active {
-    background-color: #002244;
-  }
-  
-  /* ===============================
-     5. SEÇÃO HERO
-     =============================== */
-  .hero {
-    background-color: #f9f9f9;
-    border-bottom: 2px solid #ccc;
-    padding: 2rem 0;
-    text-align: center;
-  }
-  
-  .hero h1 {
-    font-size: 2.5rem;
-    margin-top: 1rem;
-    color: #003366;
-  }
-  
-  .hero p {
-    font-size: 1.1rem;
-    color: #555;
-  }
-  
-  /* Estilo para a imagem adicionada na seção hero */
-  .hero-banner-container {
-    width: 100%;
-    max-height: 500px;
-    overflow: hidden;
-    margin-bottom: 20px;
-  }
-  
-  .banner-hero {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-  
-  /* ===============================
-     6. CONTEÚDO PRINCIPAL
-     =============================== */
-  main {
-    padding: 2rem 0;
-  }
-  
-  main h1 {
-    font-size: 2rem;
-    color: #003366;
-    margin-bottom: 1rem;
-  }
-  
-  main p {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 1.5rem;
-  }
-  
-  /* ===============================
-     7. SEÇÃO DE INFORMAÇÕES DETALHADAS
-     =============================== */
-  /* Seção de Informações Detalhadas */
-  .info-detalhada {
-    padding: 20px;
-  }
-  
-  /* ===============================
-   ESTILO PARA OS CARDS MODERNOS
-   =============================== */
-  .info-card-detalhado {
-    background-color: #003366;
-    color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
-  }
-  
-  .info-card-detalhado:hover {
-    transform: translateY(-5px);
-  }
-  
-  .info-card-detalhado h5 {
-    color: #ccc;
-    border-bottom: 1px solid #444;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-  }
-  
-  .info-card-detalhado p {
-    color: #bbb;
-    line-height: 1.6;
-  }
-
-.elegante-card {
-  background: linear-gradient(145deg, #004080, #00224d);
-  color: #fff;
-  border-radius: 15px;
-  padding: 20px;
-  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3), 
-              -8px -8px 15px rgba(255, 255, 255, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden;
-  position: relative;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.elegante-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4), 
-              -10px -10px 20px rgba(255, 255, 255, 0.2);
-}
-
-.elegante-card h5 {
-  font-size: 1.5rem;
-  color: #cce6ff;
-  border-bottom: 2px solid #66a3ff;
-  padding-bottom: 5px;
-  margin-bottom: 15px;
-}
-
-.elegante-card p {
-  color: #d1e0ff;
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background-color: #f8f9fa;
   line-height: 1.6;
 }
 
-/* Estilo Decorativo com Linhas */
-.elegante-card::before,
-.elegante-card::after {
-  content: '';
-  position: absolute;
-  border-radius: 15px;
-  transition: all 0.5s;
+/* ===============================
+     2. TOPO: TOP-BAR
+     =============================== */
+.top-bar {
+  background-color: #003366;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
 }
 
-.elegante-card::before {
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  border: 2px solid rgba(255, 255, 255, 0.1);
+.top-bar a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1rem;
+  transition: color 0.3s ease;
 }
 
-.elegante-card::after {
-  top: 5px;
-  left: 5px;
-  right: 5px;
-  bottom: 5px;
-  border: 2px solid rgba(0, 0, 0, 0.2);
+.top-bar a:hover {
+  color: #cce6ff;
 }
 
-  /* ===============================
-     8. COMPONENTES: CARDS (Notícias)
+/* ===============================
+     3. NAVBAR
      =============================== */
-  .card-noticia {
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  
-  .card-noticia:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  }
-  
-  .btn-leia-mais {
-    background-color: #003366;
-    color: #fff;
-    border: none;
-    transition: background 0.3s ease;
-  }
-  
-  .btn-leia-mais:hover {
-    background-color: #002244;
-  }
-  
-  /* ===============================
-     9. BLOCOS ESCUROS (Menus Adicionais)
+.navbar {
+  background-color: #003366;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: #fff !important;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #cce6ff !important;
+  background-color: transparent;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1) brightness(2);
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  background-color: #003366;
+  border: none;
+}
+
+.dropdown-menu .dropdown-item {
+  color: #fff;
+  transition: background 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item.active {
+  background-color: #002244;
+}
+
+/* ===============================
+     4. SEÇÃO HERO
      =============================== */
-  .blocos-menus {
-    background-color: #003366;
-    padding: 2rem 1rem;
-  }
-  
-  .bloco-escuro {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    border-radius: 4px;
-    margin-bottom: 1rem;
-  }
-  
-  .bloco-escuro h5 {
-    margin-bottom: 0.5rem;
-  }
-  
-  .bloco-escuro a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .bloco-escuro a:hover {
-    color: #cce6ff;
-  }
-  
-  /* ===============================
-     10. RODAPÉ
+.hero {
+  background-color: #f9f9f9;
+  border-bottom: 2px solid #ccc;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  color: #003366;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.hero-banner-container {
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.banner-hero {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ===============================
+     5. CONTEÚDO PRINCIPAL
      =============================== */
-  footer {
-    background-color: #003366;
-    color: #fff;
-    padding: 2rem 1rem;
-    margin-top: 2rem;
-  }
-  
-  footer a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  footer a:hover {
-    color: #cce6ff;
-  }
-  
-  .rodape-links ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .rodape-copy {
-    text-align: center;
-    margin-top: 1rem;
-    font-size: 0.9rem;
-  }
-  
-  /* ===============================
-     11. RESPONSIVIDADE
+main {
+  padding: 2rem 0;
+}
+
+main h1 {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+main p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+/* ===============================
+     6. SEÇÃO DE INFORMAÇÕES DETALHADAS
      =============================== */
-  @media (max-width: 768px) {
-    .hero h1 {
-      font-size: 2rem;
-    }
-  
-    .hero p,
-    main h1 {
-      font-size: 1.2rem;
-    }
+.info-detalhada {
+  padding: 20px;
+}
+
+/* ===============================
+     7. COMPONENTES: CARDS (Notícias)
+     =============================== */
+/* Estilização dos Cards de Notícias */
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* Centraliza os cards */
+  gap: 40px;
+  /* Espaçamento uniforme */
+  max-width: 1100px;
+  /* Mantém alinhado ao carrossel */
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.news-card {
+  width: 48%;
+  /* Mantém dois cards por linha */
+  min-width: 350px;
+  height: 240px;
+  /* Aumentei um pouco a altura */
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  padding: 20px;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+}
+
+.news-card img {
+  width: 100%;
+  height: 160px;
+  /* Ajustei a altura da imagem */
+  object-fit: cover;
+}
+
+.news-card-body {
+  padding: 15px;
+}
+
+.news-card h5 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.news-card p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .news-container {
+    flex-direction: column;
+    align-items: center;
   }
-  
- /* Aumenta a largura dos parágrafos da seção de contato */
+
+  .news-card {
+    width: 100%;
+    /* Ocupa toda a largura disponível */
+  }
+}
+
+
+/* ===============================
+     8. BLOCOS ESCUROS (Menus Adicionais)
+     =============================== */
+.blocos-menus {
+  background-color: #003366;
+  padding: 2rem 1rem;
+}
+
+.bloco-escuro {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.bloco-escuro h5 {
+  margin-bottom: 0.5rem;
+}
+
+.bloco-escuro a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.bloco-escuro a:hover {
+  color: #cce6ff;
+}
+
+/* ===============================
+     9. RODAPÉ
+     =============================== */
+footer {
+  background-color: #003366;
+  color: #fff;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #cce6ff;
+}
+
+.rodape-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.rodape-copy {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+/* ===============================
+     10. FORMULÁRIO DE CONTATO
+     =============================== */
 .contato-container {
-  max-width: 550px; /* Aumentado para 550px */
-  font-size: 1.3rem; /* Aumenta um pouco o tamanho da fonte */
+  max-width: 550px;
+  font-size: 1.3rem;
 }
 
-/* Aumenta o tamanho da caixa do formulário */
 .form-container {
-  max-width: 600px; /* Aumentado para 600px */
-  padding: 25px; /* Maior espaçamento interno */
+  max-width: 600px;
+  padding: 25px;
   background: #f8f9fa;
   border-radius: 12px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   margin-left: auto;
 }
 
-/* Aumenta a altura dos inputs e do botão */
 .form-control {
-  height: 45px; /* Campos de entrada maiores */
-  font-size: 1.1rem; /* Texto maior */
+  height: 45px;
+  font-size: 1.1rem;
 }
 
 textarea.form-control {
-  height: 92px; /* Aumenta a altura da caixa de mensagem */
+  height: 92px;
 }
 
-/* Ajuste no botão */
 .btn-enviar {
   height: 50px;
   font-size: 1.2rem;
@@ -362,5 +305,74 @@ textarea.form-control {
 }
 
 .btn-enviar:hover {
+  background-color: #0056b3;
+}
+
+/* ===============================
+     11. ESTILOS DO CARROSSEL
+     =============================== */
+/* Adicionando sombra nas bordas do carrossel */
+#newsCarousel img {
+  height: 600px; /* Retornando à altura original */
+  object-fit: cover;
+}
+
+#newsCarousel::before,
+#newsCarousel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+  /* Garante que os botões continuem clicáveis */
+}
+
+/* Sombra na parte superior para destacar o título */
+#newsCarousel::before {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent);
+}
+
+/* Sombra na parte inferior para destacar os botões */
+#newsCarousel::after {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+}
+
+/* Ajuste dos botões de navegação */
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 3;
+  /* Certifica que os botões fiquem acima das sombras */
+  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.6));
+}
+
+/* Estilizando a legenda do carrossel */
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.6); /* Fundo escuro translúcido */
+  padding: 15px;
+  border-radius: 8px;
+  bottom: 15%;
+}
+
+.carousel-caption h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.carousel-caption p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.carousel-caption .btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  font-size: 1rem;
+}
+
+.carousel-caption .btn:hover {
   background-color: #0056b3;
 }
