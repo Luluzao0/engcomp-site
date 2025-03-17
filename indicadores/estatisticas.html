@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EngComp UEMA - Estatísticas</title>
   
   <!-- Bootstrap 5 CSS via CDN -->
@@ -29,9 +30,46 @@
   <main class="container my-5">
     <h1 class="mb-4">Estatísticas</h1>
     <p>
-      Nesta seção, você encontrará os indicadores de desempenho do curso de Engenharia de Computação, incluindo números de alunos matriculados, formandos, pesquisas realizadas e outros dados que demonstram a evolução e a qualidade do ensino.
+      Aqui estão alguns dados sobre o curso de Engenharia da Computação da UEMA.
     </p>
-    <!-- Você pode adicionar gráficos, tabelas ou relatórios detalhados aqui -->
+
+    <!-- Seção de Dashboard -->
+    <section class="dashboard">
+      
+      <div class="row">
+        <!-- Gráfico de Barras -->
+        <div class="col-md-6 mb-4">
+          <div class="card p-3">
+            <h5 class="text-center">Alunos Matriculados</h5>
+            <canvas id="graficoBarras"></canvas>
+          </div>
+        </div>
+        
+        <!-- Gráfico de Linhas -->
+        <div class="col-md-6 mb-4">
+          <div class="card p-3">
+            <h5 class="text-center">Pesquisas Publicadas</h5>
+            <canvas id="graficoLinhas"></canvas>
+          </div>
+        </div>
+
+        <!-- Gráfico de Pizza -->
+        <div class="col-md-6 mb-4">
+          <div class="card p-3">
+            <h5 class="text-center">Distribuição de Cursos</h5>
+            <canvas id="graficoPizza"></canvas>
+          </div>
+        </div>
+
+        <!-- Gráfico de Radar -->
+        <div class="col-md-6 mb-4">
+          <div class="card p-3">
+            <h5 class="text-center">Habilidades dos Alunos</h5>
+            <canvas id="graficoRadar"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   
   <script src="../js/footer-component.js" defer></script>
@@ -40,6 +78,7 @@
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="../js/script.js"></script>
 </body>
 </html>

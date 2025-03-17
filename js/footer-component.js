@@ -23,11 +23,11 @@ class FooterComponent extends HTMLElement {
               </ul>
             </div>
             <!-- Informações de contato -->
-            <div class="col-md-3 mb-3">
+            <div class="col-md-4 mb-3">
               <h5>Contato</h5>
-              <p>Rua Exemplo, 123 - São Luís, MA</p>
-              <p>Telefone: (98) 99999-9999</p>
-              <p>E-mail: <a href="mailto:contato@uema.br">contato@uema.br</a></p>
+              <p>Endereço: Centro de Ciências Tecnológicas - UEMA</p>
+              <p>Telefone: +55 (98) 8108-7544</p>
+              <p>E-mail: <a href="mailto:secretaria@engcomp.uema.br">secretaria@engcomp.uema.br</a></p>
             </div>
           </div>
           <div class="rodape-copy">
