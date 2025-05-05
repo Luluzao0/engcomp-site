@@ -24,6 +24,7 @@ class NavbarComponent extends HTMLElement {
                   Curso
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="cursoDropdown">
+                  <li><a class="dropdown-item" href="${base}curso/visaoemissao.html">Visão e Missão</a></li>
                   <li><a class="dropdown-item" href="${base}curso/direcao-secretaria.html">Direção e Secretaria</a></li>
                   <li><a class="dropdown-item" href="${base}curso/docentes.html">Docentes</a></li>
                   <li><a class="dropdown-item" href="${base}curso/colegiado.html">Colegiado</a></li>
